@@ -6,13 +6,10 @@ class AbstractEntry
 {
 private:
     QString         p_id;                     // ID элемента
-    AbstractEntry  *p_next;                   // Указатель на следующий элемент
 public:
-    virtual        ~AbstractEntry() = 0 {}               // Обьявляем деструктор pure virtual, чтобы сделать этот класс абстрактным
-    void            setID(const QString id);             // Устанавливаем ID
-    QString         getID() const;                       // Получаем ID
-    void            setNext(const AbstractEntry &next);  // Устанавливаем указатель на следующий
-    AbstractEntry&  getNext() const;                     // Получаем указатель на следующий
+    virtual        ~AbstractEntry() = 0 {}           // Обьявляем деструктор pure virtual, чтобы сделать этот класс абстрактным
+    void            setID(const QString id);         // Устанавливаем ID
+    QString         getID() const;                   // Получаем ID
 };
 
 #endif // ABSTRACTENTRY_H
