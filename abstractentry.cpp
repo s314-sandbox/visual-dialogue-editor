@@ -1,11 +1,16 @@
 #include "abstractentry.h"
 
-AbstractEntry::setID(const QString id)
+AbstractEntry::~AbstractEntry()
+{
+
+}
+
+void AbstractEntry::setID(const QString id)
 {
     p_id = id;
 }
 
-AbstractEntry::getID()
+QString AbstractEntry::getID() const
 {
     return p_id;
 }
