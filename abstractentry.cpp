@@ -1,10 +1,5 @@
 #include "abstractentry.h"
 
-AbstractEntry::~AbstractEntry()
-{
-
-}
-
 AbstractEntry::setID(const QString id)
 {
     p_id = id;
