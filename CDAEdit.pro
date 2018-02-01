@@ -15,10 +15,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    abstractentry.cpp
+    abstractentry.cpp \
+    branch.cpp \
+    response.cpp \
+    action.cpp
 
 RESOURCES += \
     resources.qrc
 
 HEADERS += \
-    abstractentry.h
+    abstractentry.h \
+    branch.h \
+    response.h \
+    action.h
