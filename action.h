@@ -11,11 +11,11 @@ private:
     QString p_value;        // Присваиваемое значение
 public:
     Action();
-    void        setType();
+    void        setType(const QString type);
     QString     getType() const;
-    void        setVariable();
+    void        setVariable(const QString variable);
     QString     getVariable() const;
-    void        setValue();
+    void        setValue(const QString value);
     QString     getValue() const;
 
 };
