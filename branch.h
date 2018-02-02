@@ -17,9 +17,9 @@ public:
     QString          getSource() const;
     void             setText(const QString text);
     QString          getText() const;
-    void             addResponse(const Response& response);     // Добавить вариант ответа
-    void             removeResponse(const Response& response);  // Удалить вариант ответа
-    QList<Response>& getResponses() const;                      // Получить ссылку на весь список ответов
+    void             addResponse(Response *response);     // Добавить вариант ответа
+    void             removeResponse(Response *response);  // Удалить вариант ответа
+    QList<Response*>& getResponses();                      // Получить ссылку на весь список ответов
 };
 
 #endif // BRANCH_H
