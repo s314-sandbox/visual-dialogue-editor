@@ -12,7 +12,7 @@ public:
     Response();
     void             setText(const QString text);
     QString          getText() const;
-    void             setNext(const AbstractEntry& next);
+    void             setNext(AbstractEntry *next);
     AbstractEntry*   getNext() const;
 };
 
