@@ -4,6 +4,7 @@
 #include <abstractentry.h>
 
 class Action : public AbstractEntry
+// Элемент "Действие" -- для изменения каких-либо переменных в игре при проходе через ветку диалога
 {
 private:
     QString p_type;         // Тип производимого действия

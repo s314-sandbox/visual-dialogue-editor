@@ -1,13 +1,13 @@
 #include <QApplication>
 #include <uimainwindow.h>
-#include <uiscene.h>
+#include <uiview.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
     UIMainWindow mainWindow;
-    UIScene *mainView = new UIScene;
+    UIView *mainView = new UIView;
     mainWindow.setCentralWidget(mainView);
     mainWindow.show();
 

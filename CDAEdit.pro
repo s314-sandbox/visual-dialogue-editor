@@ -18,7 +18,15 @@ SOURCES += main.cpp \
     abstractentry.cpp \
     branch.cpp \
     response.cpp \
-    action.cpp
+    action.cpp \
+    dialoguestructure.cpp \
+    uimainwindow.cpp \
+    uinode.cpp \
+    uibranch.cpp \
+    uiview.cpp \
+    uiscene.cpp \
+    uiresponse.cpp \
+    uiaction.cpp
 
 RESOURCES += \
     resources.qrc
@@ -27,4 +35,14 @@ HEADERS += \
     abstractentry.h \
     branch.h \
     response.h \
-    action.h
+    action.h \
+    dialoguestructure.h \
+    uimainwindow.h \
+    uinode.h \
+    uibranch.h \
+    uiview.h \
+    uiscene.h \
+    uiresponse.h \
+    uiaction.h
+
+INCLUDEPATH += ./include

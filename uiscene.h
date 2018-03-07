@@ -1,17 +1,26 @@
 #ifndef UISCENE_H
 #define UISCENE_H
 
-#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsSceneContextMenuEvent>
+#include <QMap>
+#include <QUuid>
 
-class UIScene : public QGraphicsView
+class UINode;
+
+class UIScene : public QGraphicsScene
 {
     Q_OBJECT
 
 public:
-    UIScene(QWidget *parent = 0);
-
+    UIScene(QObject *parent = 0);
+    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event);
 private:
-    int timerId;
+    QMap<QString, UINode*> nodes;
+    QPointF                rightClick;
+private slots:
+    void                   addBranch();
+    void                   addResponse();
 };
 
 #endif // UISCENE_H

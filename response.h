@@ -4,6 +4,7 @@
 #include <abstractentry.h>
 
 class Response : public AbstractEntry
+// Элемент "Ответ" -- реплики, произносимые персонажем игрока, как ответы в диалоге
 {
 private:
     QString           p_text;      // Содержание ответа
